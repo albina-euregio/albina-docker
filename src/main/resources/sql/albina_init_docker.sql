@@ -1,5 +1,5 @@
 INSERT INTO server_instances (API_URL, EXTERNAL_SERVER, HTML_DIRECTORY, MAP_PRODUCTION_URL, MAPS_PATH, MEDIA_PATH, NAME, PASSWORD, PDF_DIRECTORY, PUBLISH_AT_5PM, PUBLISH_AT_8PM, SERVER_IMAGES_URL, USER_NAME)
-VALUES ('https://api.avalanche.report/albina/api/', 0, '/var/www/static.avalanche.report/simple', '/opt/avalanche-warning-maps', '/var/www/static.avalanche.report/bulletins', '/var/www/static.avalanche.report/media_files', 'Avalanche.report', '', '/var/www/static.avalanche.report/bulletins', 1, 1, 'https://admin.avalanche.report/images/', 'info@avalanche.report');
+VALUES ('/albina/api/', 0, '/var/www/static.avalanche.report/simple', '/opt/avalanche-warning-maps', '/var/www/static.avalanche.report/bulletins', '/var/www/static.avalanche.report/media_files', 'albina.local', '', '/var/www/static.avalanche.report/bulletins', 1, 1, 'https://admin.avalanche.report/images/', 'info@albina.local');
 
 
 INSERT INTO regions (ID, CREATE_CAAML_V5, CREATE_CAAML_V6, CREATE_JSON, CREATE_MAPS, CREATE_PDF, CREATE_SIMPLE_HTML, EMAIL_COLOR, ENABLE_MEDIA_FILE, GEO_DATA_DIRECTORY, IMAGE_COLORBAR_BW_PATH, IMAGE_COLORBAR_COLOR_PATH, MAP_CENTER_LAT, MAP_CENTER_LNG, MAP_LOGO_BW_PATH, MAP_LOGO_COLOR_PATH, MAP_LOGO_POSITION, MAP_X_MAX, MAP_X_MIN, MAP_Y_MAX, MAP_Y_MIN, MICRO_REGIONS, PDF_COLOR, PDF_FOOTER_LOGO, PDF_FOOTER_LOGO_BW_PATH, PDF_FOOTER_LOGO_COLOR_PATH, PDF_MAP_HEIGHT, PDF_MAP_WIDTH_AM_PM, PDF_MAP_WIDTH_FD, PDF_MAP_Y_AM_PM, PDF_MAP_Y_FD, PUBLISH_BLOGS, PUBLISH_BULLETINS, SEND_EMAILS, SEND_PUSH_NOTIFICATIONS, SEND_TELEGRAM_MESSAGES, SIMPLE_HTML_TEMPLATE_NAME, SERVER_INSTANCE_ID, SHOW_MATRIX)
@@ -11,15 +11,15 @@ VALUES ('EUREGIO', 1, 1, 1, 1, 1, 1, '1AABFF', 0, 'geodata.Euregio/', 'logo/grey
 
 # zee3tohDuu7Zi
 INSERT INTO users (EMAIL, NAME, PASSWORD)
-VALUES ('info@avalanche.report', 'Avalanche.report', '$2a$10$y8hK8NYD4MAErYd.1ZWLDO8.Eu3MFBD.98LFyIHvRf95Tgx3rQuBa');
+VALUES ('info@albina.local', 'info@albina.local', '$2a$10$y8hK8NYD4MAErYd.1ZWLDO8.Eu3MFBD.98LFyIHvRf95Tgx3rQuBa');
 
 
 INSERT INTO user_region (USER_EMAIL,REGION_ID) VALUES
-	 ('info@avalanche.report','AT-07'),
-	 ('info@avalanche.report','IT-32-BZ'),
-	 ('info@avalanche.report','IT-32-TN');
+	 ('info@albina.local','AT-07'),
+	 ('info@albina.local','IT-32-BZ'),
+	 ('info@albina.local','IT-32-TN');
 
 
 INSERT INTO user_role (USER_EMAIL, USER_ROLE)
-VALUES ('info@avalanche.report', 'ADMIN'),
-       ('info@avalanche.report', 'FORECASTER');
+VALUES ('info@albina.local', 'ADMIN'),
+       ('info@albina.local', 'FORECASTER');
