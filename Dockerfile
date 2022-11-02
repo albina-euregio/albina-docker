@@ -37,5 +37,6 @@ COPY --from=build /app/target/albina /usr/local/tomcat/webapps/albina
 COPY --from=build-albina-admin-gui /app/dist /usr/local/tomcat/webapps/ROOT
 COPY --from=build-textcat-ng /app/dist /usr/local/tomcat/webapps/textcat-ng
 COPY --from=build-avalanche-warning-maps /app/avalanche-warning-maps-master /opt/avalanche-warning-maps
+ADD docker-static-web.xml /usr/local/tomcat/webapps/static/WEB-INF/web.xml
 
 EXPOSE 8080
