@@ -23,12 +23,15 @@ services:
       # ALBINA_JWT_SECRET: ""
     ports:
       - "8080:8080"
+    volumes:
+      - albina-data:/usr/local/tomcat/webapps/static
     networks:
       - albina-network
     depends_on:
       - albina-db
 
 volumes:
+  albina-data:
   mysql-data:
 
 networks:

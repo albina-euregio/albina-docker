@@ -11,8 +11,12 @@ This repository builds and provides the ALBINA system as [docker-compose](https:
 ## URLs
 
 - http://localhost:8080/ – albina-admin-gui
+- http://localhost:8080/static/bulletins/
+- http://localhost:8080/static/simple/
+- http://localhost:8080/static/media_files/
 - http://localhost:8080/textcat-ng/ – textcat-ng
 
 ## Docker Volumes
 
+- albina-data
 - mysql-data
