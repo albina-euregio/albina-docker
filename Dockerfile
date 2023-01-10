@@ -27,7 +27,7 @@ RUN apk add unzip && unzip avalanche-warning-maps.zip && find
 
 FROM alpine:latest AS build
 WORKDIR /app
-ADD https://gitlab.com/albina-euregio/albina-server/-/jobs/artifacts/docker/download?job=production+build albina-server.zip
+ADD https://gitlab.com/albina-euregio/albina-server/-/jobs/artifacts/master/download?job=production+build albina-server.zip
 RUN apk add unzip && unzip albina-server.zip && unzip target/albina.war -d /app/target/albina
 ADD docker-log4j2.xml target/albina/WEB-INF/classes/log4j2.xml
 
